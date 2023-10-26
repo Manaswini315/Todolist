@@ -1,0 +1,121 @@
+/* background */
+body {
+    margin: 0;
+    min-width: 250px;
+    background-image: url("https://marketplace.canva.com/EAFIqMW9Xjg/1/0/1600w/canva-black-and-white-minimalist-modern-desktop-wallpaper-e4hjcdh3zCc.jpg");
+    background-repeat: repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+h1{
+    margin-right:200px;
+    margin-left: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: grey;
+    color: wheat;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* margin and padding */
+ul {
+    margin-left: 225px;
+    padding-bottom: 10px;
+}
+/* margin between tasks */
+li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; 
+    position: relative;
+    width:75%;
+    padding: 10px;
+  }
+/* list items */
+ul li {
+    position: relative;
+    padding: 10px 10px;
+    list-style-type: none;
+    background: white;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* checked list items */
+ul li.checked {
+    background: lightblue; 
+    color: white;
+    text-decoration: none;
+}
+
+/* "checked" mark */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    height: 15px;
+}
+
+/* similar height and width */
+input[type="checkbox"] {
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+/* completed */
+.completed {
+    background-color: lightblue; 
+  }
+  /* deletebtn */
+.deleteBtn {
+    background-color: #f44336; 
+    color: white; 
+    border: none;
+    padding: 5px 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.deleteBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+/* Style the header */
+.header {
+    padding: 200px 100px;
+    color: white;
+    text-align: center;
+}
+
+/* Style the input */
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    color: black;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+/* newtask butonn */
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: black;
+    color:white;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 0;
+}
